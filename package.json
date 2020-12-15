@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "1.0.0",
   "description": "asdf",
-  "main": "server/index.js",
+  "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
     "react-scripts": "^4.0.1",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node ./server/index.js",
+    "start:prod": "node index.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
