@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import EmailPic from '../../assets/email.png'
+import EmailPic from '../../assets/email.png';
+import { Container, Image } from 'semantic-ui-react'
 
 export default class Contact extends Component {
     render() {
         return (
-            <div class="container">
+         <Container>
     <div class="row">
       <div class="col-md-8">
         <div class="page-header">
@@ -12,7 +13,7 @@ export default class Contact extends Component {
         </div>
         <div class="row">
           <div class="col-md-3">
-            <img src={EmailPic} alt="Placeholder" class="img-thumbnail"></img>
+            <Image src={EmailPic} size='small' alt="Placeholder" class="img-thumbnail"></Image>
           </div>
           <div class="col-md-9">
             <p>
@@ -28,7 +29,7 @@ export default class Contact extends Component {
         </div>
       </div>
       </div>
-      </div>
+      </Container>
         )
     }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css';
+import { Container, Header, Icon, Button } from 'semantic-ui-react'
 
 const project = ({ img, name, href, description }) => {
     const NAME = name.charAt(0).toUpperCase() + name.substring(1, name.length);

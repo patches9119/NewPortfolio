@@ -4,18 +4,18 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import About from './pages/About/about';
 import Portfolio from './pages/Portfolio/portfolio';
 import Contact from './pages/Contact/contact';
 import Navbar from './components/navbar/navbar';
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   return (
     <Router>
     <div class="container">
-      <Navbar />
+      <Navbar></Navbar>
       <br/>
       <Route path= '/' exact component = {About} />
       <Route path = '/portfolio' exact component = {Portfolio} />
